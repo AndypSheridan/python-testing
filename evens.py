@@ -8,7 +8,11 @@ def even_number_of_evens(numbers):
     if the number of evens is even, return True
     """
 
-    return None
+    if isinstance(numbers, list):
+        return True
+    else:
+        raise TypeError("A list was not passed into the function")
 
 
-print(even_number_of_evens(5))
+if __name__ == '__main__':
+    print(even_number_of_evens(5))
